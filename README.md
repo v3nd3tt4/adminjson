@@ -1,0 +1,2 @@
+# adminjson
+admin master
