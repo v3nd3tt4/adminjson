@@ -131,4 +131,13 @@ class Resep extends CI_Controller {
 	        }
 	    }
 	}
+
+	public function remove($id_resep){
+		$hapus = $this->db->delete('tb_resep', array('id_resep' => $id_resep));
+		if($hapus){
+			echo '<script>alert("Berhasil dihapus!!");window.history.back();</script>';
+		}else{
+			echo '<script>alert("Gagal dihapus!!");window.history.back();</script>';
+		}
+	}
 }
