@@ -21,6 +21,7 @@
               <th>No</th>
               <th>Gambar</th>
               <th>Judul</th>
+              <th>Kategori</th>
               <th>Aksi</th>
             </tr>
           </thead>
@@ -30,6 +31,7 @@
               <td><?=$no++?>.</td>
               <td><img src="<?=base_url()?>file_upload/<?=$row_data->gambar?>" class="img img-thumbnail" width="350px" ></td>
               <td><?=$row_data->judul?></td>
+              <td><?=$row_data->kategori?></td>
               <td>
                 <a href="<?=base_url()?>resep/remove/<?=$row_data->id_resep?>" onclick="return confirm('are you sure?')" class="btn btn-xs btn-danger" ><i class="fa fa-remove"></i> Hapus</a>
                 <a href="<?=base_url()?>resep/edit/<?=$row_data->id_resep?>" class="btn btn-xs btn-success" onclick="if(!confirm(\'Anda yakin mengedit data ini?\')) return false;"><i class="fa fa-pencil"></i> Edit</a>

@@ -93,6 +93,7 @@ class Resep extends CI_Controller {
 		if (!is_uploaded_file($_FILES['gambar']['tmp_name'])) {
 			$data = array(
 				'judul'	=> $this->input->post('judul', true),
+				'kategori' => $this->input->post('kategori', true),
 				'tanggal'	=> date('Y-m-d H:i:s'),
 				'deskripsi'	=> $this->input->post('keterangan', true),
 			);
@@ -119,6 +120,7 @@ class Resep extends CI_Controller {
 	        	$upload_data = $this->upload->data();
 		        $data = array(
 					'judul'	=> $this->input->post('judul', true),
+					'kategori' => $this->input->post('kategori', true),
 					'tanggal'	=> date('Y-m-d H:i:s'),
 					'gambar'	=> $upload_data['file_name'],
 					'deskripsi'	=> $this->input->post('keterangan', true),
