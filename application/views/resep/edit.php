@@ -20,6 +20,14 @@
             <input type="text" name="judul" class="form-control" value="<?=$row->row()->judul?>" required />
           </div>
           <div class="form-group">
+            <label>Kategori:</label>
+            <select name="kategori" class="form-control" required >
+              <option value="">--pilih--</option>
+              <option value="masakan" <?=$row->row()->kategori == 'masakan' ? 'selected' : ''?>>masakan</option>
+              <option value="kue" <?=$row->row()->kategori == 'kue' ? 'selected' : ''?>>kue</option>
+            </select>
+          </div>
+          <div class="form-group">
             <label>Gambar:</label>
             <input type="file" name="gambar" class="form-control"/>
             <small>*Isi jika hanya anda ingin mengubah gambar</small>

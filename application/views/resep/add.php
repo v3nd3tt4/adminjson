@@ -17,6 +17,14 @@
             <input type="text" name="judul" class="form-control" required />
           </div>
           <div class="form-group">
+            <label>Kategori:</label>
+            <select name="kategori" class="form-control" required >
+              <option value="">--pilih--</option>
+              <option value="masakan">masakan</option>
+              <option value="kue">kue</option>
+            </select>
+          </div>
+          <div class="form-group">
             <label>Gambar:</label>
             <input type="file" name="gambar" class="form-control" required/>
           </div>

@@ -64,6 +64,7 @@ class Resep extends CI_Controller {
 	        $lampiran = $upload_data['file_name'];
 	        $data = array(
 				'judul'	=> $this->input->post('judul', true),
+				'kategori' => $this->input->post('kategori', true),
 				'tanggal'	=> date('Y-m-d H:i:s'),
 				'gambar'	=> $upload_data['file_name'],
 				'deskripsi'	=> $this->input->post('keterangan', true),
