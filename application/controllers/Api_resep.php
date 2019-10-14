@@ -73,7 +73,7 @@ class Api_resep extends CI_Controller {
 	}
 	
 	public function resepnya(){
-	    $result = $this->db->query("SELECT * from tb_resep order by judul ASC");
+	    $result = $this->db->query("SELECT * from tb_resep where kategori = 'masakan' order by tanggal ASC");
 	    $data = array(
             "status" => "true",
             "message" =>"Data fetched successfully!",
