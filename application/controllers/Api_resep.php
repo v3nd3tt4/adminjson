@@ -82,4 +82,15 @@ class Api_resep extends CI_Controller {
           
 	    echo json_encode($data);
 	}
+
+    public function kuenya(){
+        $result = $this->db->query("SELECT * from tb_resep where kategori = 'kue' order by tanggal ASC");
+        $data = array(
+            "status" => "true",
+            "message" =>"Data fetched successfully!",
+            "data" => $result->result()
+        );
+          
+        echo json_encode($data);
+    }
 }
