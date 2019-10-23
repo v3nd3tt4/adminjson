@@ -25,6 +25,7 @@
               <option value="">--pilih--</option>
               <option value="masakan" <?=$row->row()->kategori == 'masakan' ? 'selected' : ''?>>masakan</option>
               <option value="kue" <?=$row->row()->kategori == 'kue' ? 'selected' : ''?>>kue</option>
+              <option value="wallpaper" <?=$row->row()->kategori == 'wallpaper' ? 'selected' : ''?>>wallpaper</option>
             </select>
           </div>
           <div class="form-group">

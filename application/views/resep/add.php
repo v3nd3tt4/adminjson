@@ -22,6 +22,7 @@
               <option value="">--pilih--</option>
               <option value="masakan">masakan</option>
               <option value="kue">kue</option>
+              <option value="wallpaper">wallpaper</option>
             </select>
           </div>
           <div class="form-group">
