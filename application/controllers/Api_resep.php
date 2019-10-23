@@ -95,7 +95,7 @@ class Api_resep extends CI_Controller {
     }
 
     public function wallpaper(){
-        $result = $this->db->query("SELECT * from tb_resep where kategori = 'wallpaper' order by tanggal DESC");
+        $result = $this->db->query("SELECT * from tb_resep where kategori in ('wallpaper','wallpaper_nature', 'wallpaper_siluet') order by tanggal DESC");
         $data = array(
             "status" => "true",
             "message" =>"Data fetched successfully!",

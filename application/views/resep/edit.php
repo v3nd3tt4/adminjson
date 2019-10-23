@@ -27,6 +27,7 @@
               <option value="kue" <?=$row->row()->kategori == 'kue' ? 'selected' : ''?>>kue</option>
               <option value="wallpaper" <?=$row->row()->kategori == 'wallpaper' ? 'selected' : ''?>>wallpaper</option>
               <option value="wallpaper_nature" <?=$row->row()->kategori == 'wallpaper_nature' ? 'selected' : ''?>>wallpaper_nature</option>
+              <option value="wallpaper_siluet" <?=$row->row()->kategori == 'wallpaper_siluet' ? 'selected' : ''?>>wallpaper_siluet</option>
             </select>
           </div>
           <div class="form-group">
