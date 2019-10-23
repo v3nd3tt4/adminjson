@@ -23,6 +23,7 @@
               <option value="masakan">masakan</option>
               <option value="kue">kue</option>
               <option value="wallpaper">wallpaper</option>
+              <option value="wallpaper_nature">wallpaper_nature</option>
             </select>
           </div>
           <div class="form-group">
